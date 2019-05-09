@@ -26,7 +26,7 @@ HTML, body {
 #navi_bar {
   position: fixed;
   height: 100vh;
-  width: 20%;
+  width: 25%;
   background-color: #1E3248;
   transition-duration: 0.4s;
   z-index: 10;
@@ -39,6 +39,12 @@ HTML, body {
 }
 #navi_bar .navi_text .botton {
   margin-bottom: 2rem;
+}
+#navi_bar .navi_text .botton .list {
+  display: flex;
+}
+#navi_bar .navi_text .botton .list .wrap {
+  margin-right: 1rem;
 }
 #navi_bar .navi_text .botton .text {
   padding-left: 15px;
@@ -155,35 +161,20 @@ HTML, body {
 #info .container-fluid {
   padding: 1rem;
 }
-#info .container-fluid .row .map {
-  padding-left: 40px;
-}
-#info .container-fluid .row .map img {
-  max-width: 768px;
+#info .container-fluid .row a {
+  height: 100%;
   width: 100%;
-  background-size: cover;
-  background-origin: center center;
+  cursor: pointer;
 }
-#info .container-fluid .row .text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1.5rem;
-  padding-top: 4rem;
-}
-#info .container-fluid .row .text .traffic {
-  padding: 3rem;
-}
-#info .container-fluid .row .text .traffic a i {
+#info .container-fluid .row a i {
   font-size: 8rem;
   margin-bottom: 3rem;
   color: #1E3248;
 }
-#info .container-fluid .row .text .traffic a i:hover {
+#info .container-fluid .row a i:hover {
   transform: translateY(4px);
 }
-#info .container-fluid .row .text .traffic h3 {
+#info .container-fluid .row h3 {
   font-size: 2.3rem;
   letter-spacing: 0.5rem;
   padding-left: 0.5rem;
@@ -191,21 +182,29 @@ HTML, body {
   color: #444;
   font-weight: 500;
 }
-#info .container-fluid .row .text .traffic p {
+#info .container-fluid .row p {
   color: #777;
   font-size: 1.2rem;
   font-weight: 300;
   letter-spacing: 2px;
   padding-left: 2px;
 }
-#info .container-fluid .row .text .traffic p span {
+#info .container-fluid .row p span {
   font-size: 0.9rem;
   color: #999;
 }
-#info .container-fluid .row .text .switch_button {
+#info .container-fluid .row .text, #info .container-fluid .row .map {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  padding-top: 4rem;
+}
+#info .container-fluid .row .text .switch_button, #info .container-fluid .row .map .switch_button {
   margin-top: 2rem;
 }
-#info .container-fluid .row .text .switch_button .switchers {
+#info .container-fluid .row .text .switch_button .switchers, #info .container-fluid .row .text .switch_button .fake_button, #info .container-fluid .row .map .switch_button .switchers, #info .container-fluid .row .map .switch_button .fake_button {
   display: inline-block;
   margin: 5px;
   cursor: pointer;
@@ -218,7 +217,7 @@ HTML, body {
 section#navi {
   background-color: #1E3248;
   color: rgba(255, 255, 255, 0.8);
-  height: 13rem;
+  height: 16rem;
 }
 section#navi .container-fluid {
   padding: 30px 40px;
@@ -229,6 +228,12 @@ section#navi .container-fluid .col-4 {
 }
 section#navi .container-fluid .col-4:hover {
   border-left: 2px solid #C18F42;
+}
+section#navi .container-fluid .col-4 .list {
+  display: flex;
+}
+section#navi .container-fluid .col-4 .list .wrap {
+  margin-right: 1rem;
 }
 section#navi .container-fluid .nolist {
   border-right: 2px solid rgba(255, 255, 255, 0.5);
@@ -297,6 +302,7 @@ section {
   color: white;
   opacity: 0;
   transition-duration: 0.3s;
+  margin-bottom: 2px;
 }
 .botton .list .item:hover {
   color: #C18F42;
@@ -355,7 +361,7 @@ section {
 
 .navi_off {
   position: absolute;
-  right: -30%;
+  right: -25%;
 }
 
 .navi_on {
