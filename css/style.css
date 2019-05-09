@@ -208,8 +208,8 @@ HTML, body {
   display: inline-block;
   margin: 5px;
   cursor: pointer;
-  width: 1rem;
-  height: 1rem;
+  width: 1.3rem;
+  height: 1.3rem;
   border-radius: 50%;
   background-color: #F1F3F3;
 }
@@ -244,14 +244,14 @@ section#navi .container-fluid .nolist .botton {
 
 .navi_switch {
   position: absolute;
-  right: 30px;
-  top: 30px;
+  right: 2.5rem;
+  top: 2.5rem;
   font-size: 0px;
   cursor: pointer;
   z-index: 9;
 }
 .navi_switch .line {
-  width: 28px;
+  width: 2rem;
   height: 4px;
   background-color: #999;
   transition-duration: 0.2s;
@@ -260,10 +260,10 @@ section#navi .container-fluid .nolist .botton {
   margin: 5px 0px;
 }
 .navi_switch:hover .line {
-  width: 30px;
+  width: 2.2rem;
 }
 .navi_switch:hover .center {
-  margin: 7px 0px;
+  margin: 8px 0px;
 }
 
 section {
@@ -389,5 +389,5 @@ section {
 }
 
 .hint_border {
-  border: 3px solid #1E3248;
+  border: 4px solid #1E3248;
 }
