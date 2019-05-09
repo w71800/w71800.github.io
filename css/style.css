@@ -1,0 +1,387 @@
+@charset "UTF-8";
+@keyframes shining_button {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+HTML, body {
+  padding: 0px;
+  margin: 0px;
+  background-color: #FAFAFA;
+}
+
+* {
+  font-family: "微軟正黑體";
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+#navi_bar {
+  position: fixed;
+  height: 100vh;
+  width: 20%;
+  background-color: #1E3248;
+  transition-duration: 0.4s;
+  z-index: 10;
+  box-shadow: -1px 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
+#navi_bar .navi_text {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+}
+#navi_bar .navi_text .botton {
+  margin-bottom: 2rem;
+}
+#navi_bar .navi_text .botton .text {
+  padding-left: 15px;
+  border-left: 3px solid #7D97B7;
+}
+#navi_bar .navi_text .botton:hover .text {
+  border-left: 3px solid #C18F42;
+}
+
+#welcome_banner {
+  height: 100vh;
+  background-color: black;
+  background-size: cover;
+  margin-top: 0px;
+}
+#welcome_banner .container {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#welcome_banner .container .text {
+  margin: 3rem 0px;
+  color: rgba(255, 255, 255, 0.8);
+}
+#welcome_banner .container .text h3 {
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  margin-bottom: 100px;
+  line-height: 2rem;
+  padding-left: 3px;
+  font-weight: 300;
+}
+#welcome_banner .container .text h1 {
+  font-size: 5rem;
+  letter-spacing: 25px;
+  line-height: 8rem;
+  padding-left: 25px;
+  font-weight: 500;
+}
+#welcome_banner .container .text .block {
+  display: inline-block;
+  background-color: rgba(193, 143, 66, 0.6);
+  height: 0.5rem;
+  width: 3.5rem;
+  margin: 1rem;
+}
+#welcome_banner .container p {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-weight: 300;
+  color: white;
+  line-height: 2.5rem;
+  border-right: 4px double rgba(255, 255, 255, 0.3);
+  border-left: 4px double rgba(255, 255, 255, 0.3);
+  padding: 0px 1.5rem;
+}
+#welcome_banner .container .START, #welcome_banner .container .choose {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#welcome_banner .container .START svg, #welcome_banner .container .choose svg {
+  stroke: white;
+  fill: none;
+  width: 14rem;
+}
+#welcome_banner .container .START h2, #welcome_banner .container .START .save, #welcome_banner .container .choose h2, #welcome_banner .container .choose .save {
+  font-family: "PT Serif", serif;
+  color: white;
+  cursor: pointer;
+  margin: 0.4rem;
+}
+#welcome_banner .container .START {
+  width: 14rem;
+  letter-spacing: 1px;
+}
+#welcome_banner .container .START .option h2 {
+  font-size: 1.2rem;
+  animation: shining_button 3s linear infinite;
+}
+#welcome_banner .container .choose {
+  width: 14rem;
+  letter-spacing: 1px;
+}
+#welcome_banner .container .choose h2, #welcome_banner .container .choose .save {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.2rem;
+}
+#welcome_banner .container .choose h2:hover, #welcome_banner .container .choose .save:hover {
+  color: white;
+  animation: shining_button 1.5s linear infinite;
+}
+
+#trailer {
+  background-color: white;
+}
+#trailer .container {
+  padding: 15px;
+}
+#trailer .container .title_section .trick {
+  letter-spacing: 0.5rem;
+  padding-left: 0.5rem;
+  color: black;
+  font-weight: 900;
+}
+
+#info {
+  background-color: white;
+}
+#info .container-fluid {
+  padding: 1rem;
+}
+#info .container-fluid .row .map {
+  padding-left: 40px;
+}
+#info .container-fluid .row .map img {
+  max-width: 768px;
+  width: 100%;
+  background-size: cover;
+  background-origin: center center;
+}
+#info .container-fluid .row .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  padding-top: 4rem;
+}
+#info .container-fluid .row .text .traffic {
+  padding: 3rem;
+}
+#info .container-fluid .row .text .traffic a i {
+  font-size: 8rem;
+  margin-bottom: 3rem;
+  color: #1E3248;
+}
+#info .container-fluid .row .text .traffic a i:hover {
+  transform: translateY(4px);
+}
+#info .container-fluid .row .text .traffic h3 {
+  font-size: 2.3rem;
+  letter-spacing: 0.5rem;
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+  color: #444;
+  font-weight: 500;
+}
+#info .container-fluid .row .text .traffic p {
+  color: #777;
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  padding-left: 2px;
+}
+#info .container-fluid .row .text .traffic p span {
+  font-size: 0.9rem;
+  color: #999;
+}
+#info .container-fluid .row .text .switch_button {
+  margin-top: 2rem;
+}
+#info .container-fluid .row .text .switch_button .switchers {
+  display: inline-block;
+  margin: 5px;
+  cursor: pointer;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: #F1F3F3;
+}
+
+section#navi {
+  background-color: #1E3248;
+  color: rgba(255, 255, 255, 0.8);
+  height: 13rem;
+}
+section#navi .container-fluid {
+  padding: 30px 40px;
+  max-width: 1024px;
+}
+section#navi .container-fluid .col-4 {
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
+}
+section#navi .container-fluid .col-4:hover {
+  border-left: 2px solid #C18F42;
+}
+section#navi .container-fluid .nolist {
+  border-right: 2px solid rgba(255, 255, 255, 0.5);
+}
+section#navi .container-fluid .nolist .botton {
+  margin-bottom: 1rem;
+}
+
+.navi_switch {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  font-size: 0px;
+  cursor: pointer;
+  z-index: 9;
+}
+.navi_switch .line {
+  width: 28px;
+  height: 4px;
+  background-color: #999;
+  transition-duration: 0.2s;
+}
+.navi_switch .center {
+  margin: 5px 0px;
+}
+.navi_switch:hover .line {
+  width: 30px;
+}
+.navi_switch:hover .center {
+  margin: 7px 0px;
+}
+
+section {
+  margin-top: 1.5rem;
+}
+
+.botton {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  overflow: hidden;
+}
+.botton:hover {
+  color: #C18F42;
+}
+.botton .text {
+  text-align: left;
+  transition-duration: 0.2s;
+}
+.botton .text span {
+  font-weight: 100;
+  font-size: 7px;
+  opacity: 0.3;
+}
+.botton .list {
+  position: absolute;
+  left: 1.5rem;
+  transform: translateY(5px);
+}
+.botton .list .item {
+  cursor: pointer;
+  font-size: 0.8em;
+  font-weight: 200;
+  color: white;
+  opacity: 0;
+  transition-duration: 0.3s;
+}
+.botton .list .item:hover {
+  color: #C18F42;
+}
+
+.title_section h1 {
+  font-size: 3rem;
+  margin: 2rem 0px;
+  margin-bottom: 0px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  padding-left: 5px;
+}
+.title_section p {
+  margin: 0.5rem 0px;
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 2rem;
+  letter-spacing: 1px;
+  padding-left: 1px;
+}
+.title_section p .bold {
+  font-weight: 900;
+  color: black;
+  letter-spacing: 4px;
+  padding-left: 4px;
+}
+
+.option_page {
+  background-color: black;
+  color: rgba(255, 255, 255, 0.6);
+  height: 100vh;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.option_page .row .title_text {
+  font-family: "PT Serif", serif;
+  text-align: left;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+.option_page .container-fluid .GM_murmur {
+  border: 1rem double rgba(128, 128, 128, 0.3);
+  padding: 6rem 3rem;
+}
+.option_page .container-fluid .GM_murmur .remind {
+  color: #666;
+}
+.option_page .container-fluid .GM_murmur .welcome {
+  font-size: 1.5rem;
+  font-family: "Noto Serif TC", serif;
+}
+
+.navi_off {
+  position: absolute;
+  right: -30%;
+}
+
+.navi_on {
+  position: fixed;
+  right: 0%;
+  top: 0px;
+}
+
+.list_expand:hover {
+  height: 7rem;
+}
+.list_expand:hover .item {
+  opacity: 1;
+  transform: translateY(5px);
+}
+
+#welcome_banner .container .surprise .choose .option .save_disable {
+  color: #212121;
+  cursor: default;
+  animation: none;
+}
+
+.invisible {
+  display: none;
+}
+
+.hint_border {
+  border: 3px solid #1E3248;
+}
