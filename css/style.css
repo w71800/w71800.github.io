@@ -167,7 +167,7 @@ HTML, body {
   padding: 2rem;
 }
 #info .container-fluid .row .col-md-4 h3 {
-  font-size: 2.3rem;
+  font-size: 2.5rem;
   letter-spacing: 0.5rem;
   padding-left: 0.5rem;
   margin-bottom: 1rem;
@@ -176,7 +176,7 @@ HTML, body {
 }
 #info .container-fluid .row .col-md-4 p {
   color: #777;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 400;
   letter-spacing: 2px;
   padding-left: 2px;
@@ -196,7 +196,7 @@ HTML, body {
   color: #1E3248;
 }
 #info .container-fluid .row .col-md-4 a i:hover {
-  transform: translateY(4px);
+  transform: translateY(6px);
 }
 #info .container-fluid .row .col-md-4 .gmap i {
   color: #C18F42;
@@ -260,7 +260,7 @@ section {
 }
 
 .botton {
-  font-size: 1rem;
+  font-size: 1.5rem;
   letter-spacing: 2px;
   font-weight: 400;
   cursor: pointer;
@@ -298,7 +298,7 @@ section {
 }
 
 .title_section h1 {
-  font-size: 3rem;
+  font-size: 3.3rem;
   margin: 2rem 0px;
   margin-bottom: 0px;
   font-weight: 700;
@@ -306,11 +306,11 @@ section {
   padding-left: 5px;
 }
 .title_section p {
-  margin: 0.5rem 0px;
+  margin: 1rem 0px;
   margin-bottom: 2rem;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 300;
-  line-height: 2rem;
+  line-height: 2.3rem;
   letter-spacing: 1px;
   padding-left: 1px;
 }
@@ -360,7 +360,7 @@ section {
 }
 
 .list_expand:hover {
-  height: 7rem;
+  height: 10rem;
 }
 .list_expand:hover .item {
   opacity: 1;
