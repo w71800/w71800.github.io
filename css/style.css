@@ -146,7 +146,8 @@ HTML, body {
   background-color: white;
 }
 #trailer .container {
-  padding: 15px;
+  padding: 2rem;
+  padding-bottom: 6rem;
 }
 #trailer .container .title_section .trick {
   letter-spacing: 0.5rem;
@@ -159,7 +160,8 @@ HTML, body {
   background-color: white;
 }
 #info .container-fluid {
-  padding: 1rem;
+  padding: 2rem;
+  padding-bottom: 6rem;
 }
 #info .container-fluid .row .col-md-4 {
   padding: 2rem;
@@ -170,12 +172,12 @@ HTML, body {
   padding-left: 0.5rem;
   margin-bottom: 1rem;
   color: #444;
-  font-weight: 500;
+  font-weight: 600;
 }
 #info .container-fluid .row .col-md-4 p {
   color: #777;
   font-size: 1.2rem;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 2px;
   padding-left: 2px;
 }
@@ -230,26 +232,27 @@ section#navi .container-fluid .nolist .botton {
 
 .navi_switch {
   position: absolute;
-  right: 2.5rem;
-  top: 2.5rem;
+  right: 4rem;
+  top: 4rem;
   font-size: 0px;
   cursor: pointer;
   z-index: 9;
 }
 .navi_switch .line {
-  width: 2rem;
+  width: 2.5rem;
   height: 4px;
   background-color: #999;
   transition-duration: 0.2s;
 }
 .navi_switch .center {
-  margin: 5px 0px;
+  margin: 10px 0px;
 }
 .navi_switch:hover .line {
-  width: 2.2rem;
+  width: 3rem;
+  height: 6px;
 }
 .navi_switch:hover .center {
-  margin: 8px 0px;
+  margin: 15px 0px;
 }
 
 section {
@@ -376,8 +379,4 @@ section {
 
 .hint_border {
   border: 4px solid #1E3248;
-}
-
-.fade_out {
-  opacity: 0;
 }
