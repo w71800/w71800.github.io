@@ -161,20 +161,10 @@ HTML, body {
 #info .container-fluid {
   padding: 1rem;
 }
-#info .container-fluid .row a {
-  height: 100%;
-  width: 100%;
-  cursor: pointer;
+#info .container-fluid .row .col-md-4 {
+  padding: 2rem;
 }
-#info .container-fluid .row a i {
-  font-size: 8rem;
-  margin-bottom: 3rem;
-  color: #1E3248;
-}
-#info .container-fluid .row a i:hover {
-  transform: translateY(4px);
-}
-#info .container-fluid .row h3 {
+#info .container-fluid .row .col-md-4 h3 {
   font-size: 2.3rem;
   letter-spacing: 0.5rem;
   padding-left: 0.5rem;
@@ -182,36 +172,32 @@ HTML, body {
   color: #444;
   font-weight: 500;
 }
-#info .container-fluid .row p {
+#info .container-fluid .row .col-md-4 p {
   color: #777;
   font-size: 1.2rem;
   font-weight: 300;
   letter-spacing: 2px;
   padding-left: 2px;
 }
-#info .container-fluid .row p span {
+#info .container-fluid .row .col-md-4 p span {
   font-size: 0.9rem;
   color: #999;
 }
-#info .container-fluid .row .text, #info .container-fluid .row .map {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1.5rem;
-  padding-top: 4rem;
-}
-#info .container-fluid .row .text .switch_button, #info .container-fluid .row .map .switch_button {
-  margin-top: 2rem;
-}
-#info .container-fluid .row .text .switch_button .switchers, #info .container-fluid .row .text .switch_button .fake_button, #info .container-fluid .row .map .switch_button .switchers, #info .container-fluid .row .map .switch_button .fake_button {
-  display: inline-block;
-  margin: 5px;
+#info .container-fluid .row .col-md-4 a {
+  height: 100%;
+  width: 100%;
   cursor: pointer;
-  width: 1.3rem;
-  height: 1.3rem;
-  border-radius: 50%;
-  background-color: #F1F3F3;
+}
+#info .container-fluid .row .col-md-4 a i {
+  font-size: 8rem;
+  margin-bottom: 3rem;
+  color: #1E3248;
+}
+#info .container-fluid .row .col-md-4 a i:hover {
+  transform: translateY(4px);
+}
+#info .container-fluid .row .col-md-4 .gmap i {
+  color: #C18F42;
 }
 
 section#navi {
@@ -390,4 +376,8 @@ section {
 
 .hint_border {
   border: 4px solid #1E3248;
+}
+
+.fade_out {
+  opacity: 0;
 }
