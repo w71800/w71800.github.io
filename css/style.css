@@ -71,10 +71,10 @@ HTML, body {
   color: rgba(255, 255, 255, 0.8);
 }
 #welcome_banner .container .text h3 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   letter-spacing: 3px;
   margin-bottom: 100px;
-  line-height: 2rem;
+  line-height: 2.5rem;
   padding-left: 3px;
   font-weight: 300;
 }
@@ -163,10 +163,10 @@ HTML, body {
   padding: 2rem;
   padding-bottom: 6rem;
 }
-#info .container-fluid .row .col-md-4 {
+#info .container-fluid .row .col-lg-4 {
   padding: 2rem;
 }
-#info .container-fluid .row .col-md-4 h3 {
+#info .container-fluid .row .col-lg-4 h3 {
   font-size: 2.5rem;
   letter-spacing: 0.5rem;
   padding-left: 0.5rem;
@@ -174,48 +174,42 @@ HTML, body {
   color: #444;
   font-weight: 600;
 }
-#info .container-fluid .row .col-md-4 p {
+#info .container-fluid .row .col-lg-4 p {
   color: #777;
   font-size: 1.3rem;
   font-weight: 400;
   letter-spacing: 2px;
   padding-left: 2px;
 }
-#info .container-fluid .row .col-md-4 p span {
+#info .container-fluid .row .col-lg-4 p span {
   font-size: 0.9rem;
   color: #999;
 }
-#info .container-fluid .row .col-md-4 a {
+#info .container-fluid .row .col-lg-4 a {
   height: 100%;
   width: 100%;
   cursor: pointer;
 }
-#info .container-fluid .row .col-md-4 a i {
+#info .container-fluid .row .col-lg-4 a i {
   font-size: 8rem;
   margin-bottom: 3rem;
   color: #1E3248;
 }
-#info .container-fluid .row .col-md-4 a i:hover {
+#info .container-fluid .row .col-lg-4 a i:hover {
   transform: translateY(6px);
 }
-#info .container-fluid .row .col-md-4 .gmap i {
+#info .container-fluid .row .col-lg-4 .gmap i {
   color: #C18F42;
 }
 
 section#navi {
   background-color: #1E3248;
   color: rgba(255, 255, 255, 0.8);
-  height: 16rem;
+  height: 21rem;
 }
 section#navi .container-fluid {
-  padding: 30px 40px;
-  max-width: 1024px;
-}
-section#navi .container-fluid .col-4 {
-  border-left: 2px solid rgba(255, 255, 255, 0.5);
-}
-section#navi .container-fluid .col-4:hover {
-  border-left: 2px solid #C18F42;
+  padding: 2rem 2rem;
+  max-width: 1366px;
 }
 section#navi .container-fluid .col-4 .list {
   display: flex;
@@ -223,11 +217,8 @@ section#navi .container-fluid .col-4 .list {
 section#navi .container-fluid .col-4 .list .wrap {
   margin-right: 1rem;
 }
-section#navi .container-fluid .nolist {
-  border-right: 2px solid rgba(255, 255, 255, 0.5);
-}
-section#navi .container-fluid .nolist .botton {
-  margin-bottom: 1rem;
+section#navi .container-fluid .col-4 .botton {
+  margin-bottom: 1.5rem;
 }
 
 .navi_switch {
@@ -260,12 +251,11 @@ section {
 }
 
 .botton {
-  font-size: 1.5rem;
+  font-size: 2rem;
   letter-spacing: 2px;
   font-weight: 400;
   cursor: pointer;
   color: rgba(255, 255, 255, 0.8);
-  overflow: hidden;
 }
 .botton:hover {
   color: #C18F42;
@@ -273,6 +263,11 @@ section {
 .botton .text {
   text-align: left;
   transition-duration: 0.2s;
+  padding-left: 15px;
+  border-left: 3px solid #7D97B7;
+}
+.botton .text:hover {
+  border-left: 3px solid #C18F42;
 }
 .botton .text span {
   font-weight: 100;
@@ -282,14 +277,13 @@ section {
 .botton .list {
   position: absolute;
   left: 1.5rem;
-  transform: translateY(5px);
+  transform: translateY(10px);
 }
 .botton .list .item {
   cursor: pointer;
-  font-size: 0.8em;
+  font-size: 1.5rem;
   font-weight: 200;
   color: white;
-  opacity: 0;
   transition-duration: 0.3s;
   margin-bottom: 2px;
 }
@@ -359,12 +353,14 @@ section {
   top: 0px;
 }
 
+.list_expand {
+  height: 15rem;
+}
 .list_expand:hover {
-  height: 10rem;
+  height: 15rem;
 }
 .list_expand:hover .item {
   opacity: 1;
-  transform: translateY(5px);
 }
 
 #welcome_banner .container .surprise .choose .option .save_disable {
