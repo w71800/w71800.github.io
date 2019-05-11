@@ -26,7 +26,7 @@ HTML, body {
 #navi_bar {
   position: fixed;
   height: 100vh;
-  width: 25%;
+  width: 30%;
   background-color: #1E3248;
   transition-duration: 0.4s;
   z-index: 10;
@@ -44,7 +44,7 @@ HTML, body {
   display: flex;
 }
 #navi_bar .navi_text .botton .list .wrap {
-  margin-right: 1rem;
+  margin-right: 1.5rem;
 }
 #navi_bar .navi_text .botton .text {
   padding-left: 15px;
@@ -55,7 +55,6 @@ HTML, body {
 }
 
 #welcome_banner {
-  height: 100vh;
   background-color: black;
   background-size: cover;
   margin-top: 0px;
@@ -205,20 +204,23 @@ HTML, body {
 section#navi {
   background-color: #1E3248;
   color: rgba(255, 255, 255, 0.8);
-  height: 21rem;
 }
 section#navi .container-fluid {
   padding: 2rem 2rem;
   max-width: 1366px;
 }
-section#navi .container-fluid .col-4 .list {
-  display: flex;
+section#navi .container-fluid .list_seperate {
+  margin-bottom: 6rem;
 }
-section#navi .container-fluid .col-4 .list .wrap {
+section#navi .container-fluid .col-12 .list {
+  display: flex;
+  flex-wrap: wrap;
+}
+section#navi .container-fluid .col-12 .list .item {
   margin-right: 1rem;
 }
-section#navi .container-fluid .col-4 .botton {
-  margin-bottom: 1.5rem;
+section#navi .container-fluid .col-12 .botton {
+  margin-bottom: 2.5rem;
 }
 
 .navi_switch {
@@ -251,7 +253,7 @@ section {
 }
 
 .botton {
-  font-size: 2rem;
+  font-size: 1.6rem;
   letter-spacing: 2px;
   font-weight: 400;
   cursor: pointer;
@@ -276,19 +278,24 @@ section {
 }
 .botton .list {
   position: absolute;
-  left: 1.5rem;
+  left: 2.5rem;
   transform: translateY(10px);
 }
 .botton .list .item {
   cursor: pointer;
-  font-size: 1.5rem;
-  font-weight: 200;
+  font-size: 1.3rem;
+  font-weight: 300;
+  text-align-last: left;
   color: white;
   transition-duration: 0.3s;
-  margin-bottom: 2px;
+  margin-bottom: 0.5rem;
+  padding-bottom: 2px;
+  border-bottom: 2px solid #1E3248;
+  color: rgba(255, 255, 255, 0.7);
 }
 .botton .list .item:hover {
   color: #C18F42;
+  border-bottom: 2px solid #C18F42;
 }
 
 .title_section h1 {
@@ -344,7 +351,7 @@ section {
 
 .navi_off {
   position: absolute;
-  right: -25%;
+  right: -30%;
 }
 
 .navi_on {
@@ -375,4 +382,22 @@ section {
 
 .hint_border {
   border: 4px solid #1E3248;
+}
+
+#test_link {
+  color: #C18F42;
+  border-left: 3px solid #C18F42;
+}
+#test_link .text {
+  border: none;
+}
+
+@media(max-width: 576px) {
+  #navi_bar {
+    width: 50%;
+  }
+
+  .navi_off {
+    right: -50%;
+  }
 }
