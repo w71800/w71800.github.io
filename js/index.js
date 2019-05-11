@@ -38,6 +38,6 @@ $(document).ready(function()
     welcome_fullscreen();
   })
 
-	$('#any-element').on('tap', function (e) {
+$('#any-element').on('tap', function (e) {
 // All the magic happens here
 })
