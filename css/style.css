@@ -17,6 +17,7 @@ HTML, body {
 }
 
 * {
+  border: 1px solid #000;
   font-family: "微軟正黑體";
   text-align: center;
   position: relative;
@@ -26,11 +27,12 @@ HTML, body {
 #navi_bar {
   position: fixed;
   height: 100vh;
-  width: 30%;
+  width: 35%;
   background-color: #1E3248;
   transition-duration: 0.4s;
   z-index: 10;
   box-shadow: -1px 0px 10px 5px rgba(0, 0, 0, 0.3);
+  padding-bottom: 3rem;
 }
 #navi_bar .navi_text {
   position: absolute;
@@ -42,9 +44,10 @@ HTML, body {
 }
 #navi_bar .navi_text .botton .list {
   display: flex;
+  flex-direction: column;
 }
-#navi_bar .navi_text .botton .list .wrap {
-  margin-right: 1.5rem;
+#navi_bar .navi_text .botton .list .item {
+  text-align: left;
 }
 #navi_bar .navi_text .botton .text {
   padding-left: 15px;
@@ -58,6 +61,7 @@ HTML, body {
   background-color: black;
   background-size: cover;
   margin-top: 0px;
+  padding-bottom: 3rem;
 }
 #welcome_banner .container {
   padding: 30px;
@@ -290,6 +294,7 @@ section {
   transition-duration: 0.3s;
   margin-bottom: 0.5rem;
   padding-bottom: 2px;
+  padding-right: 1rem;
   border-bottom: 2px solid #1E3248;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -351,7 +356,7 @@ section {
 
 .navi_off {
   position: absolute;
-  right: -30%;
+  right: -35%;
 }
 
 .navi_on {
@@ -361,13 +366,16 @@ section {
 }
 
 .list_expand {
-  height: 15rem;
+  height: 2.5rem;
 }
 .list_expand:hover {
-  height: 15rem;
+  height: 22rem;
 }
-.list_expand:hover .item {
+.list_expand:hover .list {
   opacity: 1;
+}
+.list_expand .list {
+  opacity: 0;
 }
 
 #welcome_banner .container .surprise .choose .option .save_disable {
