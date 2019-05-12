@@ -48,13 +48,6 @@ HTML, body {
 #navi_bar .navi_text .botton .list .item {
   text-align: left;
 }
-#navi_bar .navi_text .botton .text {
-  padding-left: 15px;
-  border-left: 3px solid #7D97B7;
-}
-#navi_bar .navi_text .botton:hover .text {
-  border-left: 3px solid #C18F42;
-}
 
 #welcome_banner {
   background-color: black;
@@ -276,8 +269,9 @@ section {
 }
 .botton .text span {
   font-weight: 100;
-  font-size: 7px;
+  font-size: 0.7rem;
   opacity: 0.3;
+  color: white;
 }
 .botton .list {
   position: absolute;
@@ -367,14 +361,18 @@ section {
 .list_expand {
   height: 2.5rem;
 }
+.list_expand .list {
+  height: 0px;
+  overflow: hidden;
+  opacity: 0;
+  transition-duration: 0.3s;
+}
 .list_expand:hover {
   height: 22rem;
 }
 .list_expand:hover .list {
   opacity: 1;
-}
-.list_expand .list {
-  opacity: 0;
+  height: 19rem;
 }
 
 #welcome_banner .container .surprise .choose .option .save_disable {
@@ -387,8 +385,15 @@ section {
   display: none;
 }
 
-.hint_border {
-  border: 4px solid #1E3248;
+#disable {
+  color: rgba(153, 153, 153, 0.2);
+  cursor: default;
+}
+#disable .text {
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+#disable .text:hover {
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 #test_link {
