@@ -239,6 +239,9 @@ section#navi .container-fluid .col-12 .botton {
   font-size: 0px;
   cursor: pointer;
   z-index: 9;
+  padding: 4rem 4rem;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 .navi_switch .line {
   width: 4rem;
