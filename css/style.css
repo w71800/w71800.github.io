@@ -4,7 +4,7 @@
     opacity: 1;
   }
   50% {
-    opacity: 0.2;
+    opacity: 0.1;
   }
   100% {
     opacity: 1;
@@ -50,7 +50,7 @@ HTML, body {
 }
 
 #welcome_banner {
-  background-image: url(https://visualhunt.com/re4/b19bfdb8);
+  background-image: url(https://upload.cc/i1/2019/05/13/LzcJor.png);
   background-color: black;
   background-size: cover;
   margin-top: 0px;
@@ -87,13 +87,6 @@ HTML, body {
   line-height: 8rem;
   padding-left: 25px;
   font-weight: 500;
-}
-#welcome_banner .container .text .block {
-  display: inline-block;
-  background-color: rgba(193, 143, 66, 0.6);
-  height: 0.5rem;
-  width: 3.5rem;
-  margin: 1rem;
 }
 #welcome_banner .container p {
   margin-top: 3rem;
@@ -142,7 +135,7 @@ HTML, body {
 }
 #welcome_banner .surprise .choose h2, #welcome_banner .surprise .choose .save {
   text-align: center;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.4);
   font-size: 2rem;
 }
 #welcome_banner .surprise .choose h2:hover, #welcome_banner .surprise .choose .save:hover {
@@ -385,7 +378,7 @@ section {
 }
 
 #welcome_banner .container .surprise .choose .option .save_disable {
-  color: #212121;
+  color: rgba(255, 255, 255, 0.1);
   cursor: default;
   animation: none;
 }
