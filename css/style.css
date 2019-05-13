@@ -57,7 +57,7 @@ HTML, body {
   padding-bottom: 3rem;
 }
 #welcome_banner .container {
-  padding: 30px;
+  padding: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -99,41 +99,44 @@ HTML, body {
   border-left: 4px double rgba(255, 255, 255, 0.3);
   padding: 0px 1.5rem;
 }
-#welcome_banner .container .START, #welcome_banner .container .choose {
+#welcome_banner .surprise {
+  margin-top: 3rem;
+}
+#welcome_banner .surprise .START, #welcome_banner .surprise .choose {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-#welcome_banner .container .START svg, #welcome_banner .container .choose svg {
+#welcome_banner .surprise .START svg, #welcome_banner .surprise .choose svg {
   stroke: white;
   fill: none;
   width: 14rem;
 }
-#welcome_banner .container .START h2, #welcome_banner .container .START .save, #welcome_banner .container .choose h2, #welcome_banner .container .choose .save {
+#welcome_banner .surprise .START h2, #welcome_banner .surprise .START .save, #welcome_banner .surprise .choose h2, #welcome_banner .surprise .choose .save {
   font-family: "PT Serif", serif;
   color: white;
   cursor: pointer;
   margin: 0.4rem;
 }
-#welcome_banner .container .START {
+#welcome_banner .surprise .START {
   width: 14rem;
   letter-spacing: 1px;
 }
-#welcome_banner .container .START .option h2 {
+#welcome_banner .surprise .START .option h2 {
   font-size: 1.2rem;
   animation: shining_button 3s linear infinite;
 }
-#welcome_banner .container .choose {
+#welcome_banner .surprise .choose {
   width: 14rem;
   letter-spacing: 1px;
 }
-#welcome_banner .container .choose h2, #welcome_banner .container .choose .save {
+#welcome_banner .surprise .choose h2, #welcome_banner .surprise .choose .save {
   text-align: center;
   color: rgba(255, 255, 255, 0.5);
   font-size: 1.2rem;
 }
-#welcome_banner .container .choose h2:hover, #welcome_banner .container .choose .save:hover {
+#welcome_banner .surprise .choose h2:hover, #welcome_banner .surprise .choose .save:hover {
   color: white;
   animation: shining_button 1.5s linear infinite;
 }
@@ -229,20 +232,13 @@ section#navi .container-fluid .col-12 .botton {
   z-index: 9;
 }
 .navi_switch .line {
-  width: 2.5rem;
-  height: 4px;
+  width: 4rem;
+  height: 6px;
   background-color: #999;
   transition-duration: 0.2s;
 }
 .navi_switch .center {
-  margin: 10px 0px;
-}
-.navi_switch:hover .line {
-  width: 3rem;
-  height: 6px;
-}
-.navi_switch:hover .center {
-  margin: 15px 0px;
+  margin: 1.3rem 0px;
 }
 
 section {
