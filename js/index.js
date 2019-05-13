@@ -16,6 +16,12 @@ $("section").click(function()
     $("#navi_bar").addClass("navi_off");
   })
 
+$("section").on("touchend",function()
+  {
+    $("#navi_bar").removeClass("navi_on");
+    $("#navi_bar").addClass("navi_off");
+  })
+
 
 $(".START").click(function()
   {
