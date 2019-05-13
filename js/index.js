@@ -4,6 +4,12 @@ $(".navi_switch").click(function()
     $("#navi_bar").addClass("navi_on");
   })
 
+$(".navi_switch").on("touchend",function()
+  {
+    $("#navi_bar").removeClass("navi_off");
+    $("#navi_bar").addClass("navi_on");
+  })
+
 $("section").click(function()
   {
     $("#navi_bar").removeClass("navi_on");

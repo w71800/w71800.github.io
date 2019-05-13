@@ -50,6 +50,7 @@ HTML, body {
 }
 
 #welcome_banner {
+  background-image: url(https://visualhunt.com/re4/b19bfdb8);
   background-color: black;
   background-size: cover;
   margin-top: 0px;
