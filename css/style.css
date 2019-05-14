@@ -105,22 +105,24 @@ HTML, body {
   color: white;
   line-height: 2.5rem;
   font-family: "Source Sans Pro", "微軟正黑體";
-  padding: 0px 1.5rem;
+  border-right: 4px double rgba(255, 255, 255, 0.2);
+  border-left: 4px double rgba(255, 255, 255, 0.2);
+  padding: 0px 4rem;
 }
 #welcome_banner .container p::before, #welcome_banner .container p::after {
   content: "";
   background-image: url(https://upload.cc/i1/2019/05/14/Xkw0uz.gif);
   height: 4rem;
-  width: 2.8rem;
+  width: 2.7rem;
   background-size: contain;
   position: absolute;
 }
 #welcome_banner .container p::before {
-  top: 1rem;
+  top: 1.5rem;
   left: -5rem;
 }
 #welcome_banner .container p::after {
-  top: 1rem;
+  top: 1.5rem;
   right: -5rem;
 }
 #welcome_banner .surprise {
@@ -261,17 +263,17 @@ section#navi .container-fluid .col-12 .botton {
   padding-top: 0px;
 }
 .navi_switch .line {
-  width: 4rem;
+  width: 3rem;
   height: 6px;
   background-color: #999;
   transition-duration: 0.2s;
 }
 .navi_switch .center {
-  margin: 1.3rem 0px;
+  margin: 1rem 0px;
 }
 
 section {
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 }
 
 .botton {
