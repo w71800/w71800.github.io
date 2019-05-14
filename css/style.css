@@ -50,7 +50,7 @@ HTML, body {
 }
 
 #welcome_banner {
-  background-image: url(https://upload.cc/i1/2019/05/13/LzcJor.png);
+  background-image: url(https://upload.cc/i1/2019/05/14/0HKwsu.png);
   background-color: black;
   background-size: cover;
   margin-top: 0px;
@@ -61,6 +61,15 @@ HTML, body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+#welcome_banner .container .block_GIF {
+  border: 1px solid white;
+}
+#welcome_banner .container .block_GIF img {
+  background-image: url(https://upload.cc/i1/2019/05/14/Xkw0uz.gif);
+  background-size: contain;
+  height: 108px;
+  width: 75px;
 }
 #welcome_banner .container .croxx {
   stroke: white;
@@ -95,9 +104,24 @@ HTML, body {
   font-weight: 300;
   color: white;
   line-height: 2.5rem;
-  border-right: 4px double rgba(255, 255, 255, 0.3);
-  border-left: 4px double rgba(255, 255, 255, 0.3);
+  font-family: "Source Sans Pro", "微軟正黑體";
   padding: 0px 1.5rem;
+}
+#welcome_banner .container p::before, #welcome_banner .container p::after {
+  content: "";
+  background-image: url(https://upload.cc/i1/2019/05/14/Xkw0uz.gif);
+  height: 4rem;
+  width: 2.8rem;
+  background-size: contain;
+  position: absolute;
+}
+#welcome_banner .container p::before {
+  top: 1rem;
+  left: -5rem;
+}
+#welcome_banner .container p::after {
+  top: 1rem;
+  right: -5rem;
 }
 #welcome_banner .surprise {
   margin-top: 3rem;
