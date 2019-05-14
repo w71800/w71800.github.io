@@ -62,15 +62,6 @@ HTML, body {
   flex-direction: column;
   align-items: center;
 }
-#welcome_banner .container .block_GIF {
-  border: 1px solid white;
-}
-#welcome_banner .container .block_GIF img {
-  background-image: url(https://upload.cc/i1/2019/05/14/Xkw0uz.gif);
-  background-size: contain;
-  height: 108px;
-  width: 75px;
-}
 #welcome_banner .container .croxx {
   stroke: white;
   fill: rgba(255, 255, 255, 0.7);
@@ -101,27 +92,37 @@ HTML, body {
   margin-top: 3rem;
   font-size: 1.5rem;
   letter-spacing: 2px;
-  font-weight: 300;
+  font-weight: 400;
   color: white;
   line-height: 2.5rem;
-  font-family: "Source Sans Pro", "微軟正黑體";
-  border-right: 4px double rgba(255, 255, 255, 0.2);
-  border-left: 4px double rgba(255, 255, 255, 0.2);
-  padding: 0px 4rem;
+  font-family: "Source Sans Pro";
+  border-right: 6px double rgba(255, 255, 255, 0.2);
+  border-left: 6px double rgba(255, 255, 255, 0.2);
+  padding: 0px 3rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+#welcome_banner .container p span {
+  font-family: inherit;
+}
+#welcome_banner .container p .bold_eng {
+  font-family: "Source Sans Pro";
+  font-weight: 600;
 }
 #welcome_banner .container p::before, #welcome_banner .container p::after {
   content: "";
-  background-image: url(https://upload.cc/i1/2019/05/14/Xkw0uz.gif);
-  height: 4rem;
+  height: 3.9rem;
   width: 2.7rem;
   background-size: contain;
   position: absolute;
+  opacity: 0.7;
 }
 #welcome_banner .container p::before {
+  background-image: url(https://upload.cc/i1/2019/05/14/Xkw0uz.gif);
   top: 1.5rem;
   left: -5rem;
 }
 #welcome_banner .container p::after {
+  background-image: url(https://upload.cc/i1/2019/05/14/32xAHT.gif);
   top: 1.5rem;
   right: -5rem;
 }
@@ -425,11 +426,14 @@ section {
 }
 
 #test_link {
-  color: #C18F42;
   border-left: 3px solid #C18F42;
 }
-#test_link .text {
+#test_link a {
+  text-decoration-color: #C18F42;
+}
+#test_link a .text {
   border: none;
+  color: #C18F42;
 }
 
 @media(max-width: 576px) {
