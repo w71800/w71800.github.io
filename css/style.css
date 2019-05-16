@@ -63,7 +63,7 @@ HTML, body {
   align-items: center;
 }
 #welcome_banner .container .text {
-  margin: 13rem 0px;
+  margin: 11rem 0px;
   margin-bottom: 7rem;
   opacity: 1;
   width: 100%;
@@ -80,7 +80,7 @@ HTML, body {
   display: inline-flex;
   opacity: 0.8;
   z-index: 5;
-  margin-bottom: 10rem;
+  margin-bottom: 8rem;
 }
 #welcome_banner .container .text .title_8bit .title_crox {
   margin: 0px -2rem;
@@ -97,7 +97,7 @@ HTML, body {
   width: 85%;
 }
 #welcome_banner .surprise {
-  margin-top: 3rem;
+  margin-bottom: 10rem;
 }
 #welcome_banner .surprise .START, #welcome_banner .surprise .choose {
   display: flex;
@@ -129,6 +129,8 @@ HTML, body {
 #welcome_banner .surprise .choose {
   width: 14rem;
   letter-spacing: 2px;
+  position: absolute;
+  top: -3rem;
 }
 #welcome_banner .surprise .choose h2, #welcome_banner .surprise .choose .save {
   text-align: center;
