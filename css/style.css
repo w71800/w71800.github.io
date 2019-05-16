@@ -69,12 +69,11 @@ HTML, body {
   width: 100%;
 }
 #welcome_banner .container .text .time_8bit {
-  font-family: "Press Start 2P", cursive;
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 1.3rem;
-  margin-bottom: 1.5rem;
-  letter-spacing: 3px;
-  padding-left: 3px;
+  margin-bottom: 1rem;
+  opacity: 0.6;
+}
+#welcome_banner .container .text .time_8bit img {
+  width: 50%;
 }
 #welcome_banner .container .text .title_8bit {
   display: inline-flex;
