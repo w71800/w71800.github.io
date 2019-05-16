@@ -17,7 +17,6 @@ HTML, body {
 }
 
 * {
-  border: 1px solid #000;
   font-family: "微軟正黑體";
   text-align: center;
   position: relative;
@@ -55,7 +54,7 @@ HTML, body {
   background-color: black;
   background-size: cover;
   margin-top: 0px;
-  padding-bottom: 3rem;
+  padding-bottom: 6rem;
 }
 #welcome_banner .container {
   padding: 1.5rem;
@@ -74,6 +73,8 @@ HTML, body {
   color: rgba(255, 255, 255, 0.5);
   font-size: 1.3rem;
   margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  padding-left: 3px;
 }
 #welcome_banner .container .text .title_8bit {
   display: inline-flex;
@@ -93,8 +94,6 @@ HTML, body {
 }
 #welcome_banner .container .text .info_8bit img {
   padding: 0px 0.5rem;
-  border-right: 4px double rgba(255, 255, 255, 0.3);
-  border-left: 4px double rgba(255, 255, 255, 0.3);
   width: 85%;
 }
 #welcome_banner .surprise {
