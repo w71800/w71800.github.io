@@ -17,6 +17,7 @@ HTML, body {
 }
 
 * {
+  border: 1px solid #000;
   font-family: "微軟正黑體";
   text-align: center;
   position: relative;
@@ -68,9 +69,15 @@ HTML, body {
   opacity: 1;
   width: 100%;
 }
+#welcome_banner .container .text .time_8bit {
+  font-family: "Press Start 2P", cursive;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
 #welcome_banner .container .text .title_8bit {
   display: inline-flex;
-  opacity: 0.9;
+  opacity: 0.8;
   z-index: 5;
   margin-bottom: 10rem;
 }
@@ -106,7 +113,7 @@ HTML, body {
   opacity: 0.3;
 }
 #welcome_banner .surprise .START h2, #welcome_banner .surprise .START .save, #welcome_banner .surprise .choose h2, #welcome_banner .surprise .choose .save {
-  font-family: "PT Serif", serif;
+  font-family: "PT Serif";
   color: white;
   cursor: pointer;
   margin: 0.5rem;

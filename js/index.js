@@ -38,6 +38,8 @@ function welcome_fullscreen()
     if(welcome_width<welcome_height)
     {
       $("#welcome_banner").css("height","100vh")  
+      $(".title_straight").removeClass("invisible")
+      $(".title_part").addClass("invisible")
     }
     else
     {
