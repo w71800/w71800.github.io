@@ -57,53 +57,38 @@ HTML, body {
   padding-bottom: 3rem;
 }
 #welcome_banner .container {
-  padding: 3rem;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 #welcome_banner .container .text {
-  margin: 10rem 0px;
-  margin-bottom: 5rem;
-  color: rgba(255, 255, 255, 0.8);
+  margin: 13rem 0px;
+  margin-bottom: 7rem;
+  opacity: 1;
   width: 100%;
 }
 #welcome_banner .container .text .title_8bit {
+  display: inline-flex;
+  opacity: 0.9;
   z-index: 5;
-  margin-bottom: 7rem;
+  margin-bottom: 10rem;
+}
+#welcome_banner .container .text .title_8bit .title_crox {
+  margin: 0px -2rem;
 }
 #welcome_banner .container .text .title_8bit img {
   width: 100%;
 }
 #welcome_banner .container .text .info_8bit {
-  z-index: 4;
-}
-#welcome_banner .container .text .info_8bit::before, #welcome_banner .container .text .info_8bit::after {
-  content: "";
-  height: 3.9rem;
-  width: 2.7rem;
-  background-size: contain;
-  position: absolute;
-  top: -1rem;
-}
-#welcome_banner .container .text .info_8bit::before {
-  background-image: url(https://upload.cc/i1/2019/05/14/32xAHT.gif);
-  left: 2rem;
-}
-#welcome_banner .container .text .info_8bit::after {
-  background-image: url(https://upload.cc/i1/2019/05/14/Xkw0uz.gif);
-  right: 2rem;
+  display: inline;
+  opacity: 0.6;
 }
 #welcome_banner .container .text .info_8bit img {
-  width: 70%;
-}
-#welcome_banner .container .text .shadow {
-  z-index: -4;
-  position: absolute;
-  top: 0.4rem;
-}
-#welcome_banner .container .text .info_shadow {
-  z-index: -5;
+  padding: 0px 0.5rem;
+  border-right: 4px double rgba(255, 255, 255, 0.3);
+  border-left: 4px double rgba(255, 255, 255, 0.3);
+  width: 85%;
 }
 #welcome_banner .surprise {
   margin-top: 3rem;
