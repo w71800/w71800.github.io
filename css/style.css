@@ -68,16 +68,9 @@ HTML, body {
   opacity: 1;
   width: 100%;
 }
-#welcome_banner .container .text .time_8bit {
-  margin-bottom: 1rem;
-  opacity: 0.6;
-}
-#welcome_banner .container .text .time_8bit img {
-  width: 60%;
-}
 #welcome_banner .container .text .title_8bit {
   display: inline-flex;
-  opacity: 0.8;
+  opacity: 0.9;
   z-index: 5;
   margin-bottom: 8rem;
 }
@@ -87,13 +80,20 @@ HTML, body {
 #welcome_banner .container .text .title_8bit img {
   width: 100%;
 }
+#welcome_banner .container .text .time_8bit {
+  margin-bottom: 1rem;
+  opacity: 0.6;
+}
+#welcome_banner .container .text .time_8bit img {
+  width: 55%;
+}
 #welcome_banner .container .text .info_8bit {
   display: inline;
   opacity: 0.6;
 }
 #welcome_banner .container .text .info_8bit img {
   padding: 0px 0.5rem;
-  width: 85%;
+  width: 75%;
 }
 #welcome_banner .surprise {
   margin-bottom: 10rem;
@@ -273,6 +273,10 @@ section {
   opacity: 0.3;
   color: white;
 }
+.botton .text a {
+  color: white;
+  text-decoration: none;
+}
 .botton .list {
   position: absolute;
   left: 2.5rem;
@@ -283,7 +287,6 @@ section {
   font-size: 1.3rem;
   font-weight: 300;
   text-align-last: left;
-  color: white;
   transition-duration: 0.3s;
   margin-bottom: 0.5rem;
   padding-bottom: 2px;
@@ -291,9 +294,15 @@ section {
   border-bottom: 2px solid #1E3248;
   color: rgba(255, 255, 255, 0.7);
 }
-.botton .list .item:hover {
+.botton .list .item:hover a {
   color: #C18F42;
   border-bottom: 2px solid #C18F42;
+}
+.botton .list .item a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  padding: 0px 3px;
+  padding-bottom: 1px;
 }
 
 .title_section h1 {
