@@ -48,6 +48,28 @@ HTML, body {
 #navi_bar .navi_text .botton .list .item {
   text-align: left;
 }
+#navi_bar #facebook_icon {
+  position: absolute;
+  bottom: 0.3rem;
+  left: 1rem;
+  background-color: white;
+  background-color: #1E3248;
+  padding-bottom: 0.3rem;
+  padding-left: 1rem;
+}
+#navi_bar #facebook_icon a {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.8);
+}
+#navi_bar #facebook_icon a i {
+  font-size: 3rem;
+}
+#navi_bar #facebook_icon p {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.4);
+  margin: 0.5rem;
+  font-size: 1.2rem;
+}
 
 #welcome_banner {
   background-image: url(https://upload.cc/i1/2019/05/14/0HKwsu.png);
@@ -209,9 +231,6 @@ section#navi .container-fluid {
   padding: 2rem 2rem;
   max-width: 1366px;
 }
-section#navi .container-fluid .list_seperate {
-  margin-bottom: 6rem;
-}
 section#navi .container-fluid .col-12 .list {
   display: flex;
   flex-wrap: wrap;
@@ -235,13 +254,13 @@ section#navi .container-fluid .col-12 .botton {
   padding-top: 0px;
 }
 .navi_switch .line {
-  width: 3rem;
-  height: 6px;
+  width: 2.5rem;
+  height: 4px;
   background-color: #999;
   transition-duration: 0.2s;
 }
 .navi_switch .center {
-  margin: 1rem 0px;
+  margin: 0.7rem 0px;
 }
 
 section {
@@ -403,6 +422,10 @@ section {
 }
 #disable .text:hover {
   border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+#disable .text a {
+  color: rgba(153, 153, 153, 0.2);
+  cursor: default;
 }
 
 #test_link {
