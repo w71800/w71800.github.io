@@ -50,8 +50,8 @@ HTML, body {
 }
 #navi_bar #facebook_icon {
   position: absolute;
-  bottom: 0.3rem;
-  left: 1rem;
+  bottom: 2.5rem;
+  left: 2.5rem;
   background-color: white;
   background-color: #1E3248;
   padding-bottom: 0.3rem;
@@ -67,7 +67,8 @@ HTML, body {
 #navi_bar #facebook_icon p {
   display: inline-block;
   color: rgba(255, 255, 255, 0.4);
-  margin: 0.5rem;
+  margin-left: 0.5rem;
+  margin-bottom: 0px;
   font-size: 1.2rem;
 }
 
