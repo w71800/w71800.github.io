@@ -61,6 +61,7 @@ HTML, body {
 #navi_bar #facebook_icon a {
   display: inline-block;
   color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
 }
 #navi_bar #facebook_icon a i {
   font-size: 3rem;
