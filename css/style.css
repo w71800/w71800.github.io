@@ -180,6 +180,54 @@ HTML, body {
   font-weight: 900;
 }
 
+#quest {
+  background-color: white;
+}
+#quest .container-fluid {
+  padding: 2rem 2rem;
+}
+#quest .container-fluid .title_section {
+  margin-bottom: 4rem;
+}
+#quest .container-fluid .title_section h4 {
+  margin: 0px;
+}
+#quest .container-fluid .title_section h1 {
+  margin-top: 1rem;
+}
+#quest .container-fluid .npc .npc_info {
+  margin-bottom: 4rem;
+}
+#quest .container-fluid .npc .npc_info .icon_BF {
+  width: 10rem;
+  height: 15rem;
+  margin: 0px auto;
+  margin-bottom: 1rem;
+}
+#quest .container-fluid .npc .npc_info .icon_BF img {
+  width: 100%;
+}
+#quest .container-fluid .npc .npc_info h5 {
+  margin: 0.5rem;
+  margin-bottom: 3px;
+  color: #666;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding-left: 1px;
+}
+#quest .container-fluid .npc .npc_info h3 {
+  letter-spacing: 2px;
+  padding-left: 2px;
+}
+#quest .container-fluid .setsume p {
+  margin: 0px;
+  text-align: left;
+  color: #999;
+}
+#quest .container-fluid .setsume .trick {
+  text-decoration: line-through;
+}
+
 #info {
   background-color: white;
 }
