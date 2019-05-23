@@ -1,30 +1,25 @@
-$(".navi_switch").click(function()
-  {
+$(".navi_switch").click(function(){
     $("#navi_bar").removeClass("navi_off");
     $("#navi_bar").addClass("navi_on");
   })
 
-$(".navi_switch").on("touchend",function()
-  {
+$(".navi_switch").on("touchend",function(){
     $("#navi_bar").removeClass("navi_off");
     $("#navi_bar").addClass("navi_on");
   })
 
-$("section").click(function()
-  {
+$("section").click(function(){
     $("#navi_bar").removeClass("navi_on");
     $("#navi_bar").addClass("navi_off");
   })
 
-$("section").on("touchend",function()
-  {
+$("section").on("touchend",function(){
     $("#navi_bar").removeClass("navi_on");
     $("#navi_bar").addClass("navi_off");
   })
 
 
-$(".START").click(function()
-  {
+$(".START").click(function(){
     $(this).addClass("invisible")
     $(this).css("height","0")
     $(".choose").removeClass("invisible")
@@ -33,8 +28,7 @@ $(".START").click(function()
 var welcome_width = $(window).width()
 var welcome_height = $(window).height()
 
-function welcome_fullscreen()
-  {
+function welcome_fullscreen(){
     if(welcome_width<welcome_height)
     {
       $("#welcome_banner").css("height","100vh")  
@@ -47,11 +41,31 @@ function welcome_fullscreen()
     }
   }
 
-$(document).ready(function()    
-  {
-    welcome_fullscreen();
-  })
+var loading_countdown = 9000
 
-// $('#any-element').on('tap', function (e) {
-// // All the magic happens here
-// })
+$(".NewGame").click(function(){
+  $("#welcome_banner").addClass("invisible")
+  $("#NewGame").removeClass("invisible")
+  $(".loading").addClass("nowloading")
+  setTimeout(function(){
+      loading_complete()
+      }, loading_countdown)
+})
+
+$(".load").click(function(){
+  $("#welcome_banner").addClass("invisible")
+  $("#LOAD").removeClass("invisible")
+  $(".loading").addClass("nowloading")
+  setTimeout(function(){
+      loading_complete()
+      }, 9000)
+})
+
+function loading_complete(){
+    $(".loading").addClass("invisible_opacity")
+    $(".login").removeClass("invisible_opacity")
+  }
+
+$(document).ready(function(){
+    welcome_fullscreen()
+  })
