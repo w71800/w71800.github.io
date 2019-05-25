@@ -58,7 +58,16 @@ $(".load").click(function(){
   $(".loading").addClass("nowloading")
   setTimeout(function(){
       loading_complete()
-      }, 9000)
+      }, loading_countdown)
+})
+
+$(".save").click(function(){
+  $("#welcome_banner").addClass("invisible")
+  $("#SAVE").removeClass("invisible")
+  $(".loading").addClass("nowloading")
+  setTimeout(function(){
+      loading_complete()
+      }, loading_countdown)
 })
 
 function loading_complete(){
