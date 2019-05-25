@@ -193,7 +193,7 @@ HTML, body {
 
 #quest {
   margin-top: 0px;
-  padding: 2.5rem;
+  padding: 3rem;
   background-color: rgba(30, 50, 72, 0.9);
 }
 #quest .container-fluid {
@@ -306,7 +306,7 @@ section#navi .container-fluid .list_seperate {
   margin-bottom: 10rem;
 }
 section#navi .container-fluid .row {
-  margin-bottom: 5rem;
+  margin-bottom: 8rem;
 }
 section#navi .container-fluid .row .col-12 .list {
   display: flex;
@@ -444,15 +444,20 @@ section {
   background-color: rgba(255, 255, 255, 0.7);
   box-shadow: -20px 20px 0px rgba(255, 255, 255, 0.3);
   font-family: "Noto Serif TC", serif;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 6rem;
   padding: 5rem 3rem;
   padding-bottom: 3rem;
+  max-width: 935px;
 }
 .option_page .container-fluid .GM_murmur .remind {
   text-align: left;
-  margin-bottom: 6rem;
-  color: #444;
+  margin-bottom: 5rem;
+  color: #777;
   font-weight: 300;
+  font-size: 1.3rem;
+  line-height: 2.5rem;
 }
 .option_page .container-fluid .GM_murmur .welcome {
   text-align: left;
@@ -516,11 +521,11 @@ section {
   transition-duration: 0.3s;
 }
 .list_expand:hover {
-  height: 22rem;
+  height: 26rem;
 }
 .list_expand:hover .list {
   opacity: 1;
-  height: 19rem;
+  height: 21rem;
 }
 
 #welcome_banner .container .surprise .choose .option .save_disable {
