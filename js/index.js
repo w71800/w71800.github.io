@@ -77,5 +77,5 @@ function loading_complete(){
 
 $(document).ready(function(){
     welcome_fullscreen()
-    $(".list_seperate").css("margin-bottom","6rem")
+    $(".list_seperate").css("margin-bottom","7.5rem")
   })
