@@ -488,11 +488,11 @@ section {
   margin: 0px;
 }
 .option_page .container-fluid .GM_murmur .welcome .login .text a {
-  color: #222222;
+  color: #444444;
 }
 .option_page .container-fluid .GM_murmur .welcome .login .text a h2 {
   margin: -0.5rem 0px;
-  font-family: "Noto Serif TC", serif;
+  font-family: 微軟正黑體;
   font-size: 1.3rem;
 }
 .option_page .container-fluid .GM_murmur .loading {
