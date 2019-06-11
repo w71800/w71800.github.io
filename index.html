@@ -3,15 +3,13 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>TMHC_2019 SummerConcert</title>
+  <title>履歷手刻 (jQuery 輸出資料版)</title>
   
   
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
-<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.2/css/all.css'>
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Noto+Serif+TC:600&amp;subset=chinese-traditional'>
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Press+Start+2P'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Noto+Sans+TC'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=IBM+Plex+Serif'>
 
-      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="./style.css">
 
   
 </head>
@@ -19,312 +17,174 @@
 <body>
 
   
-<div class="navi_switch">
-  <div class="line"></div>
-  <div class="line center"></div>
-  <div class="line"></div>
-</div>
-<div class="navi_off" id="navi_bar">
-  <div class="navi_text">
-    <div class="botton list_expand">
-      <div class="text">演出曲目</div>
-      <div class="list">
-        <div class="item"> <a href="#" target="_blank">那些練琴的日子</a></div>
-        <div class="item"> <a href="#" target="_blank">學長 Show Time!</a></div>
-        <div class="item"> <a href="#" target="_blank">來自導師的琴聲</a></div>
-        <div class="item"> <a href="#" target="_blank">青春的樂章</a></div>
-        <div class="item"> <a href="#" target="_blank">帶著夢想 勇敢前行</a></div>
-        <div class="item"> <a href="#" target="_blank">旅行 x 遊戲 x Let's 狩獵</a></div>
-        <div class="item"> <a href="#" target="_blank">一銅鳴想 最終幻想</a></div>
-      </div>
-    </div>
-    <div class="botton" id="disable"> 
-      <div class="text"> <a href="#" target="_blank">現任社員</a><span> coming soon</span></div>
-    </div>
-    <div class="botton" id="disable">
-      <div class="text"> <a href="#" target="_blank">參與人員</a><span> coming soon</span></div>
-    </div>
-    <div class="botton" id="disable"> 
-      <div class="text"> <a href="#" target="_blank">謝幕感言</a><span> coming soon</span></div>
-    </div>
-    <div class="botton" id="disable"> 
-      <div class="text"> <a href="#" target="_blank">幕後花絮</a><span> coming soon</span></div>
-    </div>
-    <div class="botton" id="test_link"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfYezMoWq6sdaa2HwXkTQmqlz1fqBtB_DRKCp5wXkCFjTvh8w/viewform?usp=sf_link" target="_blank" style="color: white;">
-        <div class="text" style="border-left: none;">回報疑難雜症<span>（將會導至 Google 表單）</span></div></a></div>
-    <div id="facebook_icon"><a href="https://www.facebook.com/CGTMHC/?epa=SEARCH_BOX" target="_blank"><i class="fab fa-facebook-square"></i>
-        <p>銅鳴口琴社粉絲專頁</p></a></div>
-  </div>
-</div>
-<section id="welcome_banner">
-  <div class="container">
+<div id="resume">
+  <div class="section" id="header">
+    <div class="img"></div>
+    <div class="dec_block dec_1"></div>
+    <div class="dec_block dec_2"></div>
     <div class="text">
-      <div class="title_8bit">
-        <div class="title_straight invisible"><img src="https://upload.cc/i1/2019/05/16/bja4iD.png" style="width: 65%;"/></div>
-        <div class="title_A title_part"><img src="https://upload.cc/i1/2019/05/16/iV6Ozj.png"/></div>
-        <div class="title_crox A title_part"><img src="https://upload.cc/i1/2019/05/16/zsnB1q.png"/></div>
-        <div class="title_B A title_part"><img src="https://upload.cc/i1/2019/05/16/lAkXRy.png"/></div>
-      </div>
-      <div class="time_8bit"><img src="https://upload.cc/i1/2019/05/16/5UqWiZ.png"/></div>
-      <div class="info_8bit"><img src="https://upload.cc/i1/2019/05/16/hVNS7g.png"/></div>
-    </div>
-    <div class="surprise">
-      <div class="START">
-        <svg viewbox="-100 -3 200 6">
-          <g class="longer">
-            <line x1="-80" x2="80" y1="0" y2="0"></line>
-            <rect x="-84.83" y="-2" width="4" height="4" transform="rotate(45,-82.83,0)"></rect>
-            <rect x="-90.485" y="-2" width="4" height="4" transform="rotate(45,-88.485,0)"></rect>
-            <rect x="80.83" y="-2" width="4" height="4" transform="rotate(45,82.83,0)"></rect>
-            <rect x="86.485" y="-2" width="4" height="4" transform="rotate(45,88.485,0)"></rect>
-          </g>
-        </svg>
-        <div class="option">
-          <h2>PRESS TO START</h2>
-        </div>
-        <svg viewbox="-100 -3 200 6">
-          <g class="longer">
-            <line x1="-80" x2="80" y1="0" y2="0"></line>
-            <rect x="-84.83" y="-2" width="4" height="4" transform="rotate(45,-82.83,0)"></rect>
-            <rect x="-90.485" y="-2" width="4" height="4" transform="rotate(45,-88.485,0)"></rect>
-            <rect x="80.83" y="-2" width="4" height="4" transform="rotate(45,82.83,0)"></rect>
-            <rect x="86.485" y="-2" width="4" height="4" transform="rotate(45,88.485,0)"> </rect>
-          </g>
-        </svg>
-      </div>
-      <div class="choose invisible">
-        <svg viewbox="-100 -3 200 6">
-          <g class="short">
-            <line x1="-70" x2="70" y1="0" y2="0"></line>
-            <rect x="-74.83" y="-2" width="4" height="4" transform="rotate(45,-72.83,0)"></rect>
-            <rect x="-80.485" y="-2" width="4" height="4" transform="rotate(45,-78.485,0)"></rect>
-            <rect x="70.83" y="-2" width="4" height="4" transform="rotate(45,72.83,0)"></rect>
-            <rect x="76.485" y="-2" width="4" height="4" transform="rotate(45,78.485,0)"></rect>
-          </g>
-        </svg>
-        <div class="option">
-          <h2 class="NewGame">NEW GAME</h2>
-          <h2 class="load">LOAD</h2>
-          <div class="save save_disable">SAVE</div>
-        </div>
-        <svg viewbox="-100 -3 200 6">
-          <g class="short">
-            <line x1="-70" x2="70" y1="0" y2="0"></line>
-            <rect x="-74.83" y="-2" width="4" height="4" transform="rotate(45,-72.83,0)"></rect>
-            <rect x="-80.485" y="-2" width="4" height="4" transform="rotate(45,-78.485,0)"></rect>
-            <rect x="70.83" y="-2" width="4" height="4" transform="rotate(45,72.83,0)"></rect>
-            <rect x="76.485" y="-2" width="4" height="4" transform="rotate(45,78.485,0)"></rect>
-          </g>
-        </svg>
+      <div class="name">潘威利 (William Pan)<span class="identity">探索者、前端開發初心者</span></div>
+      <div class="sub_info">
+        <div class="school">國立台灣大學 森林環境暨資源學系</div>
+        <div class="contact">You can find me through ‘w71800@gmail.com’ or ‘0919 - 480 - 488’</div>
       </div>
     </div>
   </div>
-</section>
-<section class="option_page invisible" id="NewGame">
-  <div class="container-fluid">
-    <div class="GM_murmur"> 
-      <div class="remind">為了讓您有更好的觀賞品質，請先記得將您的手機調整至靜音或振動模式。<br>若有預設鬧鐘，也請記得先關掉喔！</div>
-      <hr/>
-      <div class="welcome"> 
-        <p>嗨，冒險者，歡迎登入今晚的遊戲。</p>
-        <p>你選擇了 <span class="blue">NEW GAME</span><span>，看來你躍躍欲試地想要開始一場有趣的冒險。</span></p>
-        <p>那我們廢話不多說，立即帶上你的耳朵以及愛玩的心。</p>
-        <p>好好地創造屬於自己的<span class="blue">全新冒險</span><span>吧！</span></p>
-        <div class="login invisible_opacity">
-          <svg viewbox="-100 -3 200 6">
-            <g class="short">
-              <line x1="-70" x2="70" y1="0" y2="0"></line>
-              <rect x="-74.83" y="-2" width="4" height="4" transform="rotate(45,-72.83,0)"></rect>
-              <rect x="-80.485" y="-2" width="4" height="4" transform="rotate(45,-78.485,0)"></rect>
-              <rect x="70.83" y="-2" width="4" height="4" transform="rotate(45,72.83,0)"></rect>
-              <rect x="76.485" y="-2" width="4" height="4" transform="rotate(45,78.485,0)"></rect>
-            </g>
-          </svg>
-          <div class="text"><a href="#" target="_blank">
-              <h2>開始遊戲</h2></a></div>
-          <svg viewbox="-100 -3 200 6">
-            <g class="short">
-              <line x1="-70" x2="70" y1="0" y2="0"></line>
-              <rect x="-74.83" y="-2" width="4" height="4" transform="rotate(45,-72.83,0)"></rect>
-              <rect x="-80.485" y="-2" width="4" height="4" transform="rotate(45,-78.485,0)"></rect>
-              <rect x="70.83" y="-2" width="4" height="4" transform="rotate(45,72.83,0)"></rect>
-              <rect x="76.485" y="-2" width="4" height="4" transform="rotate(45,78.485,0)"></rect>
-            </g>
-          </svg>
-        </div>
-      </div>
-      <div class="loading">NOW LOADING...</div>
-    </div>
+  <div class="section" id="info">
+    <div class="left_bracket"></div>
+    <div class="main_text">畢業於森林系但其實不喜歡森林系，因此選擇延畢給⾃己機會探索更多有趣的事，大多時間都不務正業。<br>喜歡跨領域接觸奇怪知識，以不斷發現這世界的廣闊作為樂趣來源，說不定想成為個 Slash。<br> 雖然性格奇怪但生性浪漫且有強⼤創造力與好奇心，找到很有趣的事就會像鱷⿂般緊咬不放（不想休息<br>的那種）；但極度厭惡束縛，對環境（食物）有點挑剔。不過是只要找到好的空間就能像太陽般發光發<br>熱的⽔瓶座（雖然我不信星座）。期許⾃己是個能夠一直從口香糖包裝中窺見宇宙偉大奧妙的人。</div>
+    <div class="right_bracket"></div>
   </div>
-</section>
-<section class="option_page invisible" id="LOAD">
-  <div class="container-fluid">
-    <div class="GM_murmur"> 
-      <div class="remind">為了讓您有更好的觀賞品質，請先記得將您的手機調整至靜音或振動模式。<br>若有預設鬧鐘，也請記得先關掉喔！</div>
-      <hr/>
-      <div class="welcome"> 
-        <p>嗨，冒險者，歡迎登入今晚的遊戲。</p>
-        <p>你選擇了 <span class="blue">LOAD</span><span>，那想必今晚會想要來到這裡的理由，</span></p>
-        <p>是因為在你心中有些有趣的回憶吧？</p>
-        <p>事不宜遲，讓我們開始來<span class="blue">讀取</span><span>那些美好時光吧！</span></p>
-        <div class="login invisible_opacity">
-          <svg viewbox="-100 -3 200 6">
-            <g class="short">
-              <line x1="-70" x2="70" y1="0" y2="0"></line>
-              <rect x="-74.83" y="-2" width="4" height="4" transform="rotate(45,-72.83,0)"></rect>
-              <rect x="-80.485" y="-2" width="4" height="4" transform="rotate(45,-78.485,0)"></rect>
-              <rect x="70.83" y="-2" width="4" height="4" transform="rotate(45,72.83,0)"></rect>
-              <rect x="76.485" y="-2" width="4" height="4" transform="rotate(45,78.485,0)"></rect>
-            </g>
-          </svg>
-          <div class="text"><a href="#" target="_blank">
-              <h2>開始遊戲</h2></a></div>
-          <svg viewbox="-100 -3 200 6">
-            <g class="short">
-              <line x1="-70" x2="70" y1="0" y2="0"></line>
-              <rect x="-74.83" y="-2" width="4" height="4" transform="rotate(45,-72.83,0)"></rect>
-              <rect x="-80.485" y="-2" width="4" height="4" transform="rotate(45,-78.485,0)"></rect>
-              <rect x="70.83" y="-2" width="4" height="4" transform="rotate(45,72.83,0)"></rect>
-              <rect x="76.485" y="-2" width="4" height="4" transform="rotate(45,78.485,0)"></rect>
-            </g>
-          </svg>
-        </div>
-      </div>
-      <div class="loading">NOW LOADING...</div>
-    </div>
+  <div class="dec_dashed"></div>
+  <div class="section" id="exp">
+    <div class="title">// 工作經驗</div>
+    <div class="content_work"></div>
   </div>
-</section>
-<section class="option_page invisible" id="SAVE">
-  <div class="container-fluid">
-    <div class="GM_murmur"> 
-      <div class="remind">在離場之前，請再次確認您的貴重用品是否有隨身攜帶。<br>如果您有看到這則訊息。手機應該不會忘記就是了 XD</div>
-      <hr/>
-      <div class="goodbye welcome">
-        <p>親愛的新手或老玩家，很感謝你能來到今晚的活動，</p>
-        <p>希望我們的演出有帶給你一些不同的感動。</p>
-        <p>不過一場宴席總有散場的一刻，就像遊戲到一個段落總要休息存檔。</p>
-        <p>所以如果能的話，不妨試著紀錄且告訴我們今晚你的想法或建議吧！</p>
-        <p>再次感謝你今晚的到場支持，讓我們致上萬分的謝意！</p>
-        <div class="login invisible_opacity">
-          <svg viewbox="-100 -3 200 6">
-            <g class="short">
-              <line x1="-70" x2="70" y1="0" y2="0"></line>
-              <rect x="-74.83" y="-2" width="4" height="4" transform="rotate(45,-72.83,0)"></rect>
-              <rect x="-80.485" y="-2" width="4" height="4" transform="rotate(45,-78.485,0)"></rect>
-              <rect x="70.83" y="-2" width="4" height="4" transform="rotate(45,72.83,0)"></rect>
-              <rect x="76.485" y="-2" width="4" height="4" transform="rotate(45,78.485,0)"></rect>
-            </g>
-          </svg>
-          <div class="text"><a href="https://docs.google.com/forms/d/1yWkeip59L-MO-tsK2mgaK0TYrdbq9KdZdpQPjsM_mZA/edit" target="_blank">
-              <h2>進入存檔</h2></a></div>
-          <svg viewbox="-100 -3 200 6">
-            <g class="short">
-              <line x1="-70" x2="70" y1="0" y2="0"></line>
-              <rect x="-74.83" y="-2" width="4" height="4" transform="rotate(45,-72.83,0)"></rect>
-              <rect x="-80.485" y="-2" width="4" height="4" transform="rotate(45,-78.485,0)"></rect>
-              <rect x="70.83" y="-2" width="4" height="4" transform="rotate(45,72.83,0)"></rect>
-              <rect x="76.485" y="-2" width="4" height="4" transform="rotate(45,78.485,0)"></rect>
-            </g>
-          </svg>
-        </div>
-      </div>
-      <div class="loading">NOW LOADING...</div>
-    </div>
-  </div>
-</section>
-<section id="quest">
-  <div class="container-fluid">
-    <div class="title_section">
-      <h4>～ Special Quest ～</h4>
-      <h1>一同玩耍，一銅鳴響</h1>
-      <p>不論你是遊戲新手或骨灰級玩家<br>只要想要，就能和我們一同演奏<br>找 NPC 聊聊，你就踏出了幻想與冒險的第一步</p>
-    </div>
-    <div class="row npc">
-      <div class="col-12 npc_info"><a href="http://bit.ly/2w9Ezmv" target="_blank">
-          <div class="icon_BF"><img src="https://upload.cc/i1/2019/05/21/MQwrja.gif"/></div></a>
-        <h5>任務 NPC</h5>
-        <h3>會動的黑魔道士  </h3>
-      </div>
-    </div>
-    <div class="row setsume">
-      <div class="col-12">
-        <p>*《Final Fantasy 主題》為下半場關卡</p>
-        <p>* 如欲使用移調武器，請詢問<span><a href="https://www.facebook.com/CGTMHC/?epa=SEARCH_BOX" target="_blank">武器屋</a></span><span>。將會有專人為您服務</span></p>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="info">
-  <div class="container-fluid">
-    <div class="title_section">
-      <h1>心動了嗎？要怎麼來呢？</h1>
-      <p>您可以考慮搭乘<span class="bold">捷運</span><span>或</span><span class="bold">公車</span><span>抵達表演會場<br>輕鬆又環保<br>絕對符合您愛地球的心</span></p>
-    </div>
-    <div class="row">
-      <div class="col-12 col-lg-4">
-        <div class="traffic mrt"><a href="https://www.metro.taipei/cp.aspx?n=91974F2B13D997F1" target="_blank"><i class="fas fa-subway"></i></a>
-          <h3>捷運</h3>
-          <p>從板南線「善導寺站」3 號出口出站<br>步行 5 分鐘即達林森南路入口<br>（位於疾管署對面）<span><br>*欲知捷運路網資訊請點擊圖示</span></p>
-        </div>
-      </div>
-      <div class="col-12 col-lg-4">
-        <div class="traffic bus"><a href="https://www2.cksh.tp.edu.tw/about/地理交通/" target="_blank"><i class="fas fa-bus-alt"></i></a>
-          <h3>公車</h3>
-          <p> 至「開南商工」「成功中學」「捷運善導寺」等站牌<br>步行 5 分鐘內即達林森南路入口<br>（位於疾管署對面）<span><br>*欲知公車路線請點擊圖示</span></p>
-        </div>
-      </div>
-      <div class="col-12 col-lg-4">
-        <div class="traffic gmap"><a href="https://reurl.cc/eaxpK" target="_blank"><i class="fas fa-map-marked-alt"></i></a>
-          <h3>這是地圖</h3>
-          <p>我們很貼心，放上了地圖<br>只要點一下，您的需求就能被解決了<span><br>*欲知詳細位置資訊請點擊圖示</span></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="navi">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-12 col-lg-4 list_seperate">
-        <div class="botton">
-          <div class="text">演出曲目</div>
-          <div class="list">
-            <div class="item"> <a href="#" target="_blank">那些練琴的日子</a></div>
-            <div class="item"> <a href="#" target="_blank">學長 Show Time!</a></div>
-            <div class="item"> <a href="#" target="_blank">來自導師的琴聲</a></div>
-            <div class="item"> <a href="#" target="_blank">青春的樂章</a></div>
-            <div class="item"> <a href="#" target="_blank">帶著夢想 勇敢前行</a></div>
-            <div class="item"> <a href="#" target="_blank">旅行 x 遊戲 x Let's 狩獵</a></div>
-            <div class="item"> <a href="#" target="_blank">一銅鳴想 最終幻想</a></div>
+  <div class="dec_dashed"></div>
+  <div class="section" id="pro_ability">
+    <div class="title">// 專業能力</div>
+    <div class="content">
+      <div class="subtitle">前端開發 (Front-End Development)<span> (2018 暑假開始自學)</span>
+        <div class="graph">
+          <div class="left_area">
+            <div class="items"> 
+              <div class="text blocks_4">HTML5</div>
+              <div class="block_group">
+                <div class="block_yes"></div>
+                <div class="block_yes"></div>
+                <div class="block_yes"></div>
+                <div class="block_yes"></div>
+                <div class="block_none"></div>
+              </div>
+            </div>
+            <div class="items blocks_4">
+              <div class="text">CSS3 / sass</div>
+              <div class="block_group">
+                <div class="block_yes"></div>
+                <div class="block_yes"></div>
+                <div class="block_yes"></div>
+                <div class="block_yes"></div>
+                <div class="block_none"></div>
+              </div>
+            </div>
+            <div class="items blocks_3">
+              <div class="text">jQuery</div>
+              <div class="block_group">
+                <div class="block_yes"></div>
+                <div class="block_yes"></div>
+                <div class="block_yes"></div>
+                <div class="block_none"></div>
+                <div class="block_none"></div>
+              </div>
+            </div>
+          </div>
+          <div class="right_area">
+            <div class="items blocks_2"> 
+              <div class="text">Bootstrap4</div>
+              <div class="block_group">
+                <div class="block_yes"></div>
+                <div class="block_yes"></div>
+                <div class="block_none"></div>
+                <div class="block_none"></div>
+                <div class="block_none"></div>
+              </div>
+            </div>
+            <div class="items blocks_1"> 
+              <div class="text">Vue.js</div>
+              <div class="block_group">
+                <div class="block_yes"></div>
+                <div class="block_none"></div>
+                <div class="block_none"></div>
+                <div class="block_none"></div>
+                <div class="block_none"></div>
+              </div>
+            </div>
+            <div class="items blocks_2">
+              <div class="text">RWD</div>
+              <div class="block_group">
+                <div class="block_yes"></div>
+                <div class="block_yes"></div>
+                <div class="block_none"></div>
+                <div class="block_none"></div>
+                <div class="block_none"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-12 col-lg-4 nolist">
-        <div class="botton" id="disable">
-          <div class="text"> <a href="#" target="_blank">現任社員</a><span> coming soon</span></div>
+      <div class="subtitle">簡報製作
+        <div class="graph" style="display: block;">
+          <div class="items blocks_4">
+            <div class="text">Keynote</div>
+            <div class="block_group">
+              <div class="block_yes"></div>
+              <div class="block_yes"></div>
+              <div class="block_yes"></div>
+              <div class="block_yes"></div>
+              <div class="block_none"></div>
+            </div>
+          </div>
+          <div class="items blocks_2">
+            <div class="text">Powerpoint</div>
+            <div class="block_group">
+              <div class="block_yes"></div>
+              <div class="block_yes"></div>
+              <div class="block_none"></div>
+              <div class="block_none"></div>
+              <div class="block_none"></div>
+            </div>
+          </div>
         </div>
-        <div class="botton" id="disable"> 
-          <div class="text"> <a href="#" target="_blank">參與人員</a><span> coming soon</span></div>
-        </div>
-      </div>
-      <div class="col-12 col-lg-4 nolist">
-        <div class="botton" id="disable"> 
-          <div class="text"> <a href="#" target="_blank">謝幕感言</a><span> coming soon</span></div>
-        </div>
-        <div class="botton" id="disable"> 
-          <div class="text"> <a href="#" target="_blank">幕後花絮</a><span> coming soon</span></div>
-        </div>
-        <div class="botton" id="test_link"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfYezMoWq6sdaa2HwXkTQmqlz1fqBtB_DRKCp5wXkCFjTvh8w/viewform?usp=sf_link" target="_blank" style="color: white;">
-            <div class="text">回報疑難雜症<span>（將會導至 Google 表單）</span></div></a></div>
       </div>
     </div>
   </div>
-</section>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+  <div class="flex_row">
+    <div class="section" id="soft">
+      <div class="title">// 軟實力</div>
+      <div class="content">
+        <div class="histogram">
+          <div class="abilities">
+            <h4 class="no_margin">創造力</h4>
+            <h4>學習力</h4>
+            <h4>邏輯力</h4>
+            <h4>轉化表達力</h4>
+          </div>
+          <div class="axis">
+            <div class="block create"></div>
+            <div class="block learn"></div>
+            <div class="block logic"></div>
+            <div class="block transform"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="hobby">
+      <div class="title">// 興趣</div>
+      <div class="content">
+        <div class="row top_row">
+          <div class="items">電影</div>
+          <div class="items">多肉植物</div>
+          <div class="items">音樂</div>
+        </div>
+        <div class="row middle_row">
+          <div class="items">玩遊戲</div>
+          <div class="items">動漫</div>
+          <div class="items">宗教</div>
+        </div>
+        <div class="row bottom_row">
+          <div class="items">臺灣</div>
+          <div class="items">科學</div>
+          <div class="items">語言研究</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 
   
 
-    <script  src="js/index.js"></script>
+    <script  src="./script.js"></script>
 
 
 
